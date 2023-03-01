@@ -1,0 +1,162 @@
+:root {
+  --fs-700: clamp(1.6rem, 1vw + 0.5rem, 2.5rem);
+  --fs-500: clamp(1rem, 1vw + 0.5rem, 1.4rem);
+  --fs-400: clamp(1rem, 1vw + 0.5rem, 1.2rem);
+  --icon: clamp(1rem, 1vw + 0.5rem, 2.5rem);
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Outfit", sans-serif;
+}
+
+body {
+  background-color: hsl(217, 54%, 11%);
+}
+
+img {
+  width: 100%;
+  border-radius: 5px;
+  margin: 0px;
+}
+
+p {
+  margin: 0px;
+}
+
+.main-container {
+  background-color: hsl(216, 50%, 16%);
+  box-shadow: 0px 0px 1px 12px hsl(217, 54%, 11%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 15px;
+  width: 250px;
+  border-radius: 5px;
+}
+
+.product-container {
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+}
+
+.information-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.img-container {
+  width: 100%;
+  cursor: pointer;
+}
+
+.image {
+  position: relative;
+}
+
+.green-effect {
+  width: 89%;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0);
+  height: 55%;
+  z-index: 9;
+  border-radius: 5px;
+}
+
+.icon-view {
+  position: absolute;
+  left: 40%;
+  top: 25%;
+  visibility: hidden;
+  width: 20%;
+}
+
+.img-container:hover .icon-view {
+  visibility: visible;
+}
+
+.img-container:hover .green-effect {
+  background-color: rgba(0, 255, 255, 0.315);
+}
+
+.icon {
+  width: 12%;
+}
+
+.icon-time {
+  width: 18%;
+  display: flex;
+  align-items: center;
+}
+
+.product-name {
+  font-size: 2rem;
+  color: white;
+}
+
+.product-desc {
+  font-size: 1.5rem;
+  color: hsl(215, 51%, 70%);
+}
+
+.currency-ammount,
+.currency-type,
+.time-left {
+  font-size: 1.2rem;
+}
+.currency-ammount,
+.currency-type {
+  color: hsl(178, 100%, 50%);
+  font-weight: bold;
+}
+
+.time-left {
+  color: hsl(215, 51%, 70%);
+}
+
+.separation-line {
+  height: 1px;
+  background-color: hsl(215, 32%, 27%);
+}
+
+.product-creator {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon-img-container {
+  width: 10%;
+}
+
+.icon-img {
+  border-style: solid;
+  border-color: white;
+  border-radius: 20px;
+  border-width: 1px;
+}
+
+.author-desc {
+  font-size: 1.2rem;
+  color: hsl(215, 51%, 70%);
+}
+
+a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+a:hover {
+  color: hsl(178, 100%, 50%);
+}
+
+.attribution {
+  font-size: 1.6em;
+  color: hsl(178, 100%, 50%);
+  justify-content: center;
+  text-align: center;
+}
